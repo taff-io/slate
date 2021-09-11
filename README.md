@@ -5,3 +5,18 @@
 </p>
 
 
+#### start
+
+```slate
+    
+    auth {
+        title   = Log In
+        
+        content = @proxy(http://sso...)
+    } 
+    
+    error => modal {
+        content = <h1>Error {{error}}</h1>
+    }
+   
+```
